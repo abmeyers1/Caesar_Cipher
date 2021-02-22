@@ -23,22 +23,17 @@ def cipher(phrase: str, key: int) -> str:
             let_index = lower.index(letter)
             try:
                 new_phrase += lower[let_index + key]
-                # print(f"lower {new_phrase}")
             except IndexError:
-                # print('Lower Index Error')
                 new_phrase += lower[let_index + key - 26]
         elif letter in upper:
             let_index = upper.index(letter)
             try:
                 new_phrase += upper[let_index + key]
-                # print(f"upper {new_phrase}")
             except IndexError:
-                # print('Upper index Error')
                 new_phrase += upper[let_index + key - 26]
         else:
             new_phrase += letter
     return new_phrase
-
 
 # print(cipher("abcde", 1))
 # print(cipher('ZYXWV',-10))
