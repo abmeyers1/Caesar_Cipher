@@ -15,6 +15,7 @@ def cipher(phrase: str, key: int) -> str:
              'v', 'w', 'x', 'y', 'z')
     upper = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
              'V', 'W', 'X', 'Y', 'Z')
+
     phrase = phrase.strip()
     print(phrase)
     new_phrase = ''
